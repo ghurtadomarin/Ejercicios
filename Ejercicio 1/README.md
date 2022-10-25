@@ -14,7 +14,7 @@ ___
 
 # GIT
 
-![Alt](/Git-Icon-1788C.png)
+![Alt](/Ejercicio%201/Git-Icon-1788C.png)
 
 Herramienta de gestión de repositorios.
 Per crear un repositori, escriurem en un terminal:
