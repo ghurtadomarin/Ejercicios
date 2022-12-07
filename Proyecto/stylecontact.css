@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(211, 208, 208, 0.733);
+  }
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    z-index: 10;
+  }
+  header.abajo{
+    background: black;
+  }  
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul li{
+    list-style: none;
+  }
+  header ul li a{
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0px;
+    font-weight: 600;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  header ul li a:hover{
+    background-color: white;
+    color: black;
+  }
+
+
+
+.formulario{
+    margin-top: 15vh;
+    font-size: 4vh;
+    text-align: center;
+}
+
+#name{
+    width: 60vh;
+    height: 6vh;
+    font-size: 20px;
+}
+
+#text{
+    height: 20vh;
+    width: 100vh;
+    text-align: left;
+    font-size: 2vh;
+}
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  @media only screen and (max-width: 800px) {
+    header ul li a{
+      position: relative;
+      font-family: helvetica;
+      margin: 0px 15px;
+      text-decoration: none;
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 400;
+      background-color: black;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: 0px;
+      font-size: 1,5vh;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    header ul li a{
+      position: relative;
+      font-family: helvetica;
+      margin: 0px 15px;
+      text-decoration: none;
+      color: white;
+      letter-spacing: 2px;
+      font-weight: 400;
+      background-color: black;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: 0px;
+      font-size: 1vh;
+    }
+  }

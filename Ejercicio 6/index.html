@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body{
+        font-size: 12px;
+      }
+      #main{
+        background-color: gray;
+        font-size: 15px;
+        width: 98vw;
+      }
+      .box-1{
+        background-color: orange;
+        width: 100vw;
+        height: 13vh;
+        font-size: 24px;
+      }
+      .box-2{
+        background-color: aqua;
+        height: 14vh;
+        font-size: 44px;
+      }
+      .box-3{
+        background-color: greenyellow;
+        height: 30vh;
+        width: 50vw;
+        font-size: 35px;
+      }
+      .box-3 > span {
+        font-size: 18px;
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <p class="box-1">
+        El fons és de color orange. La mida de la font és el doble que la font base. Ocupa el 100% de l'amplada de la
+        finestra i el 20% de l'alçada de la finestra
+      </p>
+      <p class="box-2">
+        El fons és de color cyan. La mida de la font és el triple de la font del seu contenidor pare. L'alçada és un 20%
+        de l'alçada de la finestra
+      </p>
+      <div class="box-3">
+        El fons és de color greenyellow.<br>La mida de la font és el triple de la font base. L'alçada és la meitat que
+        l'alçada de la finestra
+        <span>El fons és de color moccassin. La mida de la font és la meitat que la font del seu contenidor pare.</span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+    color: blue;
+    }
+    div > p {
+        background-color: black;
+    }
+    /* >solo para descendientes directos de la etiqueta, sin nada es general (div) */
+    a {
+        font-size: 18px; 
+    }
+a:hover {
+    color: darkviolet;
+}
+a.link:hover {
+    font-size: 30px; color: red;
+}
+
+/* Pseudo clase distintas, https://www.w3schools.com/css/css_pseudo_classes.asp */
+</style>
+</head>
+<body>
+    <a href="http://wwww.google.com"> goolge </a>
+    <a class="link" href="http://wwww.google.es"> goolge esp</a>
+    <a class="link" href="http://wwww.google.de"> goolge alem</a>
+    <a href="http://wwww.google.eu"> goolge euro</a>
+    <div id="container">
+        <p>hey tu</p>
+        <p>tu hey</p>
+        <div>
+            <header>
+            <p>hey tu 2</p>
+            </header>
+        </div>
+    </div>
+    <p>comenzo</p>
+    
+</body>
+</html>
+
+
+
