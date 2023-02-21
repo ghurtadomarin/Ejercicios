@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <img id="lightbulb" src="lightbulb-off.png" style="width: 300px" />
+    <script>
+      let lightbulbImage = document.getElementById("lightbulb");
+      let isOn = false;
+
+      /* Obté el nom del fitxer a partir de la ruta completa */
+      function getFileNameFromRoute(route) {
+        let pos = route.lastIndexOf("/");
+        return route.substr(pos + 1, route.length - pos);
+      }
+      lightbulbImage.addEventListener("click", function() {
+        imageFileName = getFileNameFromRoute(lightbulbImage.src);
+        if (imageFileName === "lightbulb-off.png") {
+          lightbulbImage.src = "lightbulb-on.png";
+        } else {
+          lightbulbImage.src = "lightbulb-off.png";
+        }
+      });
+    </script>
+  </body>
+</html>

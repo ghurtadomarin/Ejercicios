@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mostrar{
+            border: 5px solid blue;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--<h1>hola</h1>-->
+    <!--<p><span id="euros">0</span>Euros son <span id="dolars">0</span> Dolares</p>-->
+    <label>Escriu un missatge</label>
+    <input id="mensaje"/>
+    <br>
+    <button onclick='
+    document.getElementById("mostrar").innerHTML = 
+    document.getElementById("mensaje").value;
+    document.getElementById("mostrar").style.color = "red";
+    document.getElementById("mostrar").style.backgroundColor = "blue";
+    document.getElementById("mostrar").style.fontSize = "20px";
+    '>Enviar mensaje</button>
+    <p id="mostrar">dfgh</p>
+</body>
+<script>
+    
+
+.//    var euros = window.prompt("Euros:")
+.//    var dolars = euros * 1.08
+.//    document.getElementById("euros").innerHTML = euros
+.//    document.getElementById("dolars").innerHTML = dolars
+</script>
+</html>

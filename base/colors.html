@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .colours {
+        display: flex;
+        width: 400px;
+        height: 50px;
+        border: 1px solid grey;
+      }
+      .colour {
+        flex-grow: 1;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+      button {
+        border-radius: 3px;
+        padding: 6px;
+        border: 1px solid grey;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      button:hover {
+        background-color: beige;
+      }
+      button:active {
+        background-color: bisque;
+      }
+
+      #box {
+        width: 150px;
+        height: 50px;
+        border: 1px solid black;
+        margin-top: 10px;
+
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="colours">
+      <div class="colour red"></div>
+      <div class="colour green"></div>
+      <div class="colour blue"></div>
+    </div>
+    <button>Change Color</button>
+    <br />
+    <div id="box"></div>
+  </body>
+  <script>
+   const colors = ['red', 'green', 'blue'];
+let colorIndex = 0;
+button = document.querySelector('button');
+box = document.querySelector('#box');
+button.addEventListener('click', () => {
+colorIndex++;
+  if (colorIndex >= colors.length) {
+    colorIndex = 0;}
+  box.style.backgroundColor = colors[colorIndex];
+});
+  </script>
+</html>

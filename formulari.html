@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        font-size: 18px;
+      }
+      #container {
+        background-color: brown;
+        padding: 10px 15px;
+        height: 240px;
+      }
+      label {
+        width: 200px;
+        display: inline-block;
+        text-align: right;
+        margin: 8px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      input {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 3px;
+      }
+      button {
+        margin: 15px 0 0 240px;
+        padding: 5px 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 200px;
+        font-size: 1.2rem;
+      }
+      #missatges {
+        margin: 10px 0 0 100px;
+        border: 1px solid black;
+        color: grey;
+        background-color: bisque;
+        font-size: 1.2rem;
+        padding: 20px 10px;
+        width: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <label>Nombre:</label><input id="nom" /><br />
+      <label>Edad:</label><input id="edat" type="number" /> años<br />
+      <label>Email:</label><input id="email" type="text" /><br />
+      <div>
+        <button id="button">Validar</button>
+      </div>
+      <div id="missatges"></div>
+    </div>
+  </body>
+
+  <script>
+    function validaMail(correu) {
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+  if (correu =="") {
+    return false
+  }
+  if (correu.match(validRegex)) {
+    return true
+  } else {
+    return false
+  }
+}
+button = document.getElementById("button");
+button.onclick = function() {
+  nom = document.getElementById("nom").value;
+  edat = document.getElementById("edat").value;
+  email = document.getElementById("email").value;
+  missatges = document.getElementById("missatges");
+  if (nom.length > 20) {
+    missatges.innerHTML = "Nombre incorrecto";
+  } else if (edat < 18) {
+    missatges.innerHTML = "No es mayor de edad";
+  } else if (!validaMail(email)) {
+    missatges.innerHTML = "Email incorrecto";
+  } else {
+    missatges.innerHTML = "Validado correctamente";
+    }
+};
+  </script>  
+</html>

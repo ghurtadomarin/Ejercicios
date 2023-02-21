@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Calculadora</label>
+    <p>
+      Operador 1 <input id="op1" />  <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      Operador 2 <input id="op2" />
+     
+      = <span id="result"></span>
+    </p>
+    <button onclick="calculate()">Calcular</button>
+  </body>
+  
+  <script>
+    function calculate() {
+      var op1 = document.getElementById("op1").value;
+      var op2 = document.getElementById("op2").value;
+      var operator = document.getElementById("operator").value;
+      var result;
+      if (operator === "+") {
+        result = op1 + op2;
+      } else if (operator === "-") {
+        result = op1 - op2;
+      } else if (operator === "*") {
+        result = op1 * op2;
+      } else if (operator === "/") {
+        result = op1 / op2;
+      }
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+  
+  
+</html>
